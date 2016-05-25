@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51301578-bdb1-4310-8d9d-4b407c2068a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/ContactForm.php" afterPath="$PROJECT_DIR$/frontend/models/ContactForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/TestCase.php" afterPath="$PROJECT_DIR$/frontend/models/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/models/User.php" afterPath="$PROJECT_DIR$/frontend/models/User.php" />
     </list>
     <ignored path="bin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCase.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestCase.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/models/TestCase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5930388" vertical-offset="355" max-vertical-offset="1311">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state vertical-scroll-proportion="-17.857143" vertical-offset="355" max-vertical-offset="1311">
+              <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8219545" vertical-offset="241" max-vertical-offset="988">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -58,6 +67,7 @@
       <list>
         <option value="$PROJECT_DIR$/frontend/models/ContactForm.php" />
         <option value="$PROJECT_DIR$/frontend/models/TestCase.php" />
+        <option value="$PROJECT_DIR$/frontend/models/User.php" />
       </list>
     </option>
   </component>
@@ -221,8 +231,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/models/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5930388" vertical-offset="355" max-vertical-offset="1311">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state vertical-scroll-proportion="-17.857143" vertical-offset="355" max-vertical-offset="1311">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8219545" vertical-offset="241" max-vertical-offset="988">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding />
         </state>
       </provider>
