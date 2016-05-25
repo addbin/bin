@@ -34,6 +34,7 @@ class UserController extends Controller
 
     public  function actionNav()
     {
+        session_start();
         return $this->render('nav');
     }
 

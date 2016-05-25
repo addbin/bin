@@ -1,8 +1,11 @@
 
 <?php
 use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
+use frontend\assets\AppAsset;
+
+AppAsset::register($this);
 
 ?>
 <!DOCTYPE HTML>
@@ -10,6 +13,7 @@ use yii\captcha\Captcha;
 <head>
     <title>User Management System</title>
     <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+
 </head>
 <body>
 <style>
@@ -30,7 +34,7 @@ use yii\captcha\Captcha;
                 'options'=>['enctype'=>'multipart/form-data']
             ]);?>
 
-            <?= $form->field($model, 'username')->textInput(["placeholder"=>"username"]) ?>
+            <?php echo $form->field($model, 'username')->textInput(["placeholder"=>"username"]) ?>
 
             <?= $form->field($model, 'password')->passwordInput(["placeholder"=>"password"]) ?>
 
@@ -38,7 +42,7 @@ use yii\captcha\Captcha;
                 <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
             </div>
             <div class="form-group" style="float:left">
-                <h5><a href="index.php?r=user/register" style="text-decoration:none;">&nbsp;&nbsp;&nbsp; Register</a>
+                <h5><a href="<?=Url::to(['/user/register'])?>" style="text-decoration:none;">&nbsp;&nbsp;&nbsp; Register</a>
                 </h5>
             </div>
             <?php ActiveForm::end();?>

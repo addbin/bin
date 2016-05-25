@@ -67,10 +67,17 @@ class ManageController extends Controller{
     public function actionCreate()
     {
         $model = new User();
-        //$model->password = md5($this->password);
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            //return $this->redirect(['view', 'id' => $model->id]);
-            return $this->redirect(['manage/index']);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->password = md5($model->password);
+            if($model->save())
+            {
+                return $this->redirect(['manage/index']);
+            }
+            else {
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -88,8 +95,12 @@ class ManageController extends Controller{
     {
         $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
+        if ($model->load(Yii::$app->request->post()) ) {
+            $model->password = md5($model->password);
+            if($model->save())
+            {
+                return $this->redirect(['manage/index']);
+            }
             return $this->redirect(['manage/index']);
 
         } else {

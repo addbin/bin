@@ -5,9 +5,7 @@ use yii\widgets\DetailView;
 use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
-
 $this->title = $model->id;
-//$this->params['breadcrumbs'][] = ['label' => 'Users', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -25,7 +23,7 @@ require("turn.php");
 <body>
 <style>
     body{background: #009A61}
-    .login{background: #fff;padding: 3em;margin-top: 10em;border-radius: 0.5em;}
+    .login{background: #fff;padding: 3em;margin-top: 8em;border-radius: 0.5em;}
     label{display: none;}
     .mr20{margin-right:50px;}
     h3{font-family: "microsoft yahei", "黑体"}

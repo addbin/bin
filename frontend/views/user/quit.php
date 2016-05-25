@@ -1,8 +1,8 @@
 
 <?php
+use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-
 
 ?>
 <!DOCTYPE HTML>
@@ -10,13 +10,13 @@ use yii\bootstrap\ActiveForm;
 <head>
     <title>User Management System</title>
     <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
-    <?/*=Html::cssFile('@web/css/bootstrap.css')*/?>
+    <?=Html::cssFile('../css/bootstrap.css')?>
 </head>
 <body>
 <style>
     body{background: #009A61}
     .login{background: #fff;padding: 3em;margin-top: 10em;border-radius: 0.5em;}
-    label{display: none;}
+    /*label{display: none;}*/
     .mr20{margin-right:20px;}
     h3{font-family: "microsoft yahei", "黑体"}
 </style>
@@ -32,7 +32,7 @@ use yii\bootstrap\ActiveForm;
             ]);?>
 
             <div class="form-group" style="float:right">
-                <h4><a href="index.php?r=user/login" type="">Login Now</a></h4>
+                <h4><a href="<?=Url::to(['/user/login']) ?>" type="">Login Now</a></h4>
             </div>
             <?php ActiveForm::end();?>
         </div>

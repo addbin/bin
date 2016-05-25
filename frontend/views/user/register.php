@@ -2,7 +2,9 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use frontend\assets\AppAsset;
 
+AppAsset::register($this);
 
 ?>
 <!DOCTYPE HTML>
@@ -10,7 +12,7 @@ use yii\bootstrap\ActiveForm;
 <head>
     <title>User Management System</title>
     <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
-    <?=Html::cssFile('../css/bootstrap.css')?>
+    
 
 </head>
 <body>
@@ -31,7 +33,6 @@ use yii\bootstrap\ActiveForm;
                 'enableAjaxValidation' => false,
                 'options'=>['enctype'=>'multipart/form-data']
             ]);?>
-
 
             <?= $form->field($model, 'username')->textInput(["placeholder"=>"username"]) ?>
 

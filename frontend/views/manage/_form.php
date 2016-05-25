@@ -1,5 +1,4 @@
 
-
 <?php
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
@@ -33,6 +32,7 @@ require("turn.php");
         <div class="col-md-4 sm col-sm-1"></div>
         <div class="col-md-4 sm col-sm-1 login">
             <?php $form = ActiveForm::begin(); ?>
+
             <h1><?= Html::encode($this->title) ?></h1>
 
             <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>

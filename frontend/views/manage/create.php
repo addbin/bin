@@ -31,12 +31,12 @@ require("turn.php");
         <div class="col-md-4 sm col-sm-1"></div>
         <div class="col-md-4 sm col-sm-1 login">
             <?php $form = ActiveForm::begin(); ?>
-            <h1><?= Html::encode($this->title) ?></h1>
 
-            <?= $form->field($model, 'username')->textInput(['maxlength' => true ,"placeholder"=>"username"]) ?>
+            <h2><?= Html::encode($this->title) ?></h2>
+
+            <?= $form->field($model, 'username')->textInput(['maxlength' => true,"placeholder"=>"username"]) ?>
 
             <?= $form->field($model, 'password')->passwordInput(['maxlength' => true,"placeholder"=>"password"]) ?>
-
 
             <div class="form-group">
                 <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

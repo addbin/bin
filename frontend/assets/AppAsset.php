@@ -19,8 +19,19 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/common.css',
+        'css/main.css',
+        'css/bootstrap.css',
+
     ];
     public $js = [
+        'js/libs/modernizr.min.js',
+    ];
+    public $woff = [
+        'fonts/icomoon.dev.svg',
+        'fonts/icomoon.ttf',
+//        'fonts/icomoon.dev.svg',
+//        'fonts/icomoon.dev.svg',
     ];
     public $depends = [
         'yii\web\YiiAsset',
