@@ -22,7 +22,6 @@ class AppAsset extends AssetBundle
         'css/common.css',
         'css/main.css',
         'css/bootstrap.css',
-
     ];
     public $js = [
         'js/libs/modernizr.min.js',
