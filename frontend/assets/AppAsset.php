@@ -30,8 +30,6 @@ class AppAsset extends AssetBundle
     public $woff = [
         'fonts/icomoon.dev.svg',
         'fonts/icomoon.ttf',
-//        'fonts/icomoon.dev.svg',
-//        'fonts/icomoon.dev.svg',
     ];
     public $depends = [
         'yii\web\YiiAsset',
