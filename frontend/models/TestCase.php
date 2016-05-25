@@ -42,7 +42,6 @@ class TestCase extends ActiveRecord
             [['id_case', 'route', 'key', 'value', 'label', 'trigger','illustration'], 'string', 'max' => 255],
         ];
     }
-
     /**
      * @inheritdoc
      */
