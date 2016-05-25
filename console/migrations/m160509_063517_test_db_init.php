@@ -50,15 +50,4 @@ class m160509_063517_test_db_init extends Migration
     {
         $this->dropTable('{{%test_case}}');
     }
-
-    /*
-    // Use safeUp/safeDown to run migration code within a transaction
-    public function safeUp()
-    {
-    }
-
-    public function safeDown()
-    {
-    }
-    */
 }
