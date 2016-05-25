@@ -75,8 +75,7 @@ require("turn.php");
                             'delete',
                             'created_at',
                             'updated_at',
-
-                           // ['class' => 'yii\grid\ActionColumn'],
+                            
                             ['class' => 'frontend\widgets\ActionColumn',
                                 'template' => '{affiliated}{view}{update}{delete}',
                                 'buttons' => [
